@@ -2,7 +2,7 @@
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 import {
-  NetInfo,
+  // NetInfo,
   Platform,
   StatusBar,
   StyleSheet,
@@ -10,6 +10,9 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
+import NetInfo from "@react-native-community/netinfo";
+
+
 
 export default class Status extends React.Component {
   state = {
