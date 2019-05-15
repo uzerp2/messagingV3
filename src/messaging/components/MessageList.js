@@ -7,6 +7,8 @@ import {
   View,
 } from 'react-native';
 // import { MapView } from 'expo';
+import { WebView } from 'react-native-webview';
+// import {WebView} from 'react-native';
 
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -57,9 +59,22 @@ export default class MessageList extends React.Component {
 
             </Text>
 
+            <WebView source={{ uri: 'https://mail.ru/' }} />
+            <WebView
+              source={{ uri: 'https://mail.ru' }}
+              style={{ marginTop: 20 }}
+            />
+
+
+            <Text>
+              =================================
+            </Text>
 
 
           </View>
+
+
+
 
         );
       default:
